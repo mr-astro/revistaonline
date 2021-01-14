@@ -2,6 +2,7 @@
 
     &__tags {
         border-bottom: 1px solid gray;
+        padding: 0 0 1rem 0;
 
         h1 {
             font-weight: bold;
@@ -14,6 +15,7 @@
             list-style: none;
 
             li {
+                display: inline-block;
                 padding: 0.125rem 0.25rem;
                 background-color: steelblue;
                 margin-right: 0.063rem;
