@@ -1,13 +1,15 @@
-.group input,
-.group button {
-    display: inline-block;
-    border-width: 0;
-    font-size: 13px;
-    padding: 5px 10px;
+.newsletter__group {
+    &--input, &--button {
+        display: inline-block;
+        border-width: 1px;
+        font-size: 0.813rem;
+        padding: 0.313rem 0.625rem;
+    }
 
-}
+    &--button {
+        background-color: coral;
+        color: white;
+    }
+    
 
-.group button {
-    background-color: coral;
-    color: white;
 }

@@ -22,9 +22,10 @@
         display: inline-block;
         &:first-child {
             display:inline-block;
+            display:none;
 
-            @include respond-to('md') {
-                display:none;
+            @include respond-to('lg') {
+                display:contents;
                 
             }
         }

@@ -8,6 +8,15 @@
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }*/
+/*$breakpoints: (
+    'xs' : (max-width: $max-xs),
+    'sm' : (max-width: $max-sm),
+    'md' : (max-width: $max-md),
+    'lg' : (max-width: $max-lg),
+    'xl' : (max-width: $max-xl),
+    'xxl': (min-width: $min-xxl)
+
+) !default;*/
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -69,47 +78,60 @@ input {
   cursor: pointer;
   padding: 0 0.5rem;
 }
-@media (max-width: 991px) {
+@media (min-width: 992px) {
   .contenido__noticia {
-    padding: 1.5rem 0;
+    padding: 1.5rem 1rem;
   }
 }
 .contenido__noticia--cabecera {
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 2rem;
   padding: 1rem 0;
 }
-@media (max-width: 991px) {
+@media (min-width: 992px) {
   .contenido__noticia--cabecera {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
 }
 .contenido__noticia--image {
   width: 100%;
+  height: 150px;
 }
-@media (max-width: 991px) {
+@media (min-width: 768px) {
   .contenido__noticia--image {
-    height: 300px;
+    height: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .contenido__noticia--image {
+    height: 100%;
   }
 }
 .contenido__noticia--parrafo {
   font-weight: bold;
-  padding: 1rem 0;
+  padding: 1rem 0.625rem;
+  font-size: 1rem;
 }
-@media (max-width: 991px) {
+@media (min-width: 992px) {
   .contenido__noticia--parrafo {
-    padding: 1rem 0.625rem;
-    font-size: 1rem;
+    font-size: 0.7rem;
+    padding: 1rem 0;
   }
 }
 
 .footer {
   width: 100%;
-  margin: 0 auto;
   text-align: center;
 }
 .footer__info {
-  font-size: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+@media (min-width: 992px) {
+  .footer__info {
+    font-size: 1rem;
+    padding: 1rem 0;
+  }
 }
 
 .contenedor {
@@ -443,10 +465,11 @@ input {
 }
 .nav__item:first-child {
   display: inline-block;
+  display: none;
 }
-@media (max-width: 991px) {
+@media (min-width: 992px) {
   .nav__item:first-child {
-    display: none;
+    display: contents;
   }
 }
 .nav__item a {
@@ -462,12 +485,30 @@ input {
   width: 100%;
   background-color: #f2f4f5;
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  margin: 2rem 0;
+  padding: 2rem 0;
 }
-
-.newsletter h2 {
-  font-size: 24px;
+.newsletter__titulo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 1rem 0;
+}
+@media (min-width: 992px) {
+  .newsletter__titulo {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+  }
+}
+.newsletter__parrafo {
+  padding: 2rem 0;
+  font-weight: bold;
+  font-size: 1rem;
+}
+@media (min-width: 992px) {
+  .newsletter__parrafo {
+    font-size: 1rem;
+    padding: 1rem 0;
+  }
 }
 
 .listado-izquierdo {
@@ -478,6 +519,7 @@ input {
 .listado-izquierdo__cabecera {
   border-bottom: 1px solid gray;
   padding: 0 0 1rem 0;
+  display: none;
 }
 .listado-izquierdo__cabecera h1 {
   font-weight: bold;
@@ -487,8 +529,14 @@ input {
 .listado-izquierdo__cabecera p {
   font-weight: bold;
 }
+@media (min-width: 992px) {
+  .listado-izquierdo__cabecera {
+    display: contents;
+  }
+}
 .listado-izquierdo__noticias {
   margin-bottom: 3.125rem;
+  display: none;
 }
 .listado-izquierdo__noticias h1 {
   font-weight: bold;
@@ -502,15 +550,16 @@ input {
 .listado-izquierdo__noticias img {
   width: 100%;
 }
-@media (max-width: 991px) {
-  .listado-izquierdo {
-    display: none;
+@media (min-width: 992px) {
+  .listado-izquierdo__noticias {
+    display: contents;
   }
 }
 
 .listado-izquierdo__tags {
   border-bottom: 1px solid gray;
   padding: 0 0 1rem 0;
+  display: none;
 }
 .listado-izquierdo__tags h1 {
   font-weight: bold;
@@ -528,16 +577,19 @@ input {
   margin-right: 0.063rem;
   color: white;
 }
-
-.group input,
-.group button {
-  display: inline-block;
-  border-width: 0;
-  font-size: 13px;
-  padding: 5px 10px;
+@media (min-width: 992px) {
+  .listado-izquierdo__tags {
+    display: contents;
+  }
 }
 
-.group button {
+.newsletter__group--input, .newsletter__group--button {
+  display: inline-block;
+  border-width: 1px;
+  font-size: 0.813rem;
+  padding: 0.313rem 0.625rem;
+}
+.newsletter__group--button {
   background-color: coral;
   color: white;
 }

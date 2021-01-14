@@ -2,10 +2,12 @@
     width: 100%;
     float: right;
     padding: 0 0 0 2rem;
+    
 
     &__cabecera {
         border-bottom: 1px solid gray;
         padding: 0 0 1rem 0;
+        display: none;
 
         h1 {
             font-weight: bold;
@@ -16,11 +18,17 @@
         p {
             font-weight: bold;
         }
+
+        @include respond-to('lg') {
+            display: contents;
+            
+        }
         
     }
 
     &__noticias {
         margin-bottom: 3.125rem;
+        display: none;
 
         h1 {
             font-weight: bold;
@@ -36,10 +44,10 @@
         img {
             width: 100%;
         }
-    }
 
-    @include respond-to('md') {
-        display: none;
-        
+        @include respond-to('lg') {
+            display: contents;
+            
+        }
     }
 }
