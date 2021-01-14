@@ -1,0 +1,25 @@
+.contenido {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.listad-noticias {
+    width: 100%;
+    float: left;
+}
+
+.noticia {
+    width: 100%;
+    display: inline-block;
+    padding: 10%;
+    cursor: pointer;
+}
+
+.cuerpo img {
+    width: 100%;
+    height: 100%;
+}
+
+.cuerpo p {
+    padding: 5px 10px;
+}

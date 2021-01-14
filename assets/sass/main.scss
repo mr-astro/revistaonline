@@ -1,0 +1,39 @@
+//Los archivos deben de importarse según la carpeta que los contiene, 
+//una después de la otra en el siguiente orden:
+
+//abstracts/
+@import 'abstracts/function';
+@import 'abstracts/helpers';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+//vendors/
+
+//base/
+@import 'base/reset';
+@import 'base/typography';
+
+//layout/
+@import 'layout/content';
+@import 'layout/footer';
+@import 'layout/form';
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/navigation';
+@import 'layout/newsletter';
+@import 'layout/sidebar';
+@import 'layout/tags';
+
+//components/
+@import 'components/buttons';
+@import 'components/carousel';
+@import 'components/cover';
+@import 'components/dropdown';
+
+//pages/
+@import 'pages/contact';
+@import 'pages/home';
+
+//themes/
+@import 'themes/admin';
+@import 'themes/theme';
