@@ -1,25 +1,33 @@
 .contenido {
     width: 100%;
     margin: 0 auto;
-}
 
-.listad-noticias {
-    width: 100%;
-    float: left;
-}
+    &__listad-noticias {
+        width: 100%;
+        float: left;
+    }
 
-.noticia {
-    width: 100%;
-    display: inline-block;
-    padding: 10%;
-    cursor: pointer;
-}
+    &__cabecera {
+        font-weight: bold;
+        font-size: 1.2rem;
+        padding: 1rem 0;
+    }
 
-.cuerpo img {
-    width: 100%;
-    height: 100%;
-}
+    &__noticia {
+        width: 100%;
+        display: inline-block;
+        padding: 10%;
+        cursor: pointer;
+    }
 
-.cuerpo p {
-    padding: 5px 10px;
+    &__cuerpo {
+        .img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .p {
+            padding: 5px 10px;
+        }
+    }
 }

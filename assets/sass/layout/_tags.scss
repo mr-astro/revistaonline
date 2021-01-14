@@ -1,15 +1,24 @@
-.tags {
-    border-bottom: 1px solid gray;
-}
+.listado-izquierdo {
 
-.tags ul {
-    padding: 0;
-    list-style: none;
-}
+    &__tags {
+        border-bottom: 1px solid gray;
 
-.tags ul li {
-    padding: 2px 4px;
-    background-color: steelblue;
-    margin-right: 1px;
-    color: white;
+        h1 {
+            font-weight: bold;
+            font-size: 1.2rem;
+            padding: 1rem 0;
+        }
+
+        ul {
+            padding: 0;
+            list-style: none;
+
+            li {
+                padding: 0.125rem 0.25rem;
+                background-color: steelblue;
+                margin-right: 0.063rem;
+                color: white;
+            }
+        }
+    } 
 }
