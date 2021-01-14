@@ -13,7 +13,7 @@
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }*/
 
-
+$min-xs: 1px;
 $min-sm: 576px;
 $min-md: 768px;
 $min-lg: 992px;
@@ -25,6 +25,7 @@ $max-sm: 767px;
 $max-md: 991px;
 $max-lg: 1199px;
 $max-xl: 1399px;
+$max-xxl: 1800px;
 
 $breakpoints: (
     'xs' : (max-width: $max-xs),

@@ -1,6 +1,7 @@
 .contenido {
     width: 100%;
     margin: 0 auto;
+    
 
     &__listad-noticias {
         width: 100%;
@@ -12,21 +13,36 @@
         cursor: pointer;
         padding: 0 0.5rem;
 
+        @include respond-to('md') {
+            padding: 1.5rem 0;
+        }
+
         &--cabecera {
             font-weight: bold;
             font-size: 1.2rem;
             padding: 1rem 0;
+            
+            @include respond-to('md') {
+                font-size: 2rem;
+            }
         }
 
         &--image {
              width: 100%;
+
+             @include respond-to('md') {
+                height: 300px;
+            }
+             
         }
 
         &--parrafo {
+            font-weight: bold;
+            padding: 1rem 0;
 
             @include respond-to('md') {
-                padding: 5px 10px;
-                font-weight: bold;
+                padding: 1rem 0.625rem;
+                font-size: 1rem;
             }
             
             

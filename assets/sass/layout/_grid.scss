@@ -1,7 +1,6 @@
 .contenedor {
     width: 100%;
     margin: 0 auto;
-    display: grid;
 }
 
 @media (min-width: $min-sm) {
@@ -34,6 +33,37 @@
     }
 }
 
+/*
+@media (max-width: $max-sm) {
+    .contenedor {
+        width: 576px;
+    }
+}
+
+@media (max-width: $max-md) {
+    .contenedor {
+        width: 768px;
+    }
+}
+
+@media (max-width: $max-lg) {
+    .contenedor {
+        width: 992px;
+    }
+}
+
+@media (max-width: $max-xl) {
+    .contenedor {
+        width: 1200px;
+    }
+}
+
+@media (max-width: $max-xxl) {
+    .contenedor {
+        width: 1400px;
+    }
+}
+*/
 .row {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
