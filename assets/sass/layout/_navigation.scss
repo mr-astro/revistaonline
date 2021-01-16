@@ -20,24 +20,23 @@
     
     &__item {
         display: inline-block;
+        
+
         &:first-child {
-            display:inline-block;
             display:none;
 
             @include respond-to('lg') {
                 display:contents;
-                
             }
         }
-        a {
+
+        &--title {
             text-decoration: none;
             text-transform: uppercase;
         }
+
+        &--menu {
+            border-radius: 30px;
+        }
     }
-
-
-}
-
-.input-menu {
-    border-radius: 30px;
 }
